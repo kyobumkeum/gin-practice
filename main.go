@@ -13,7 +13,7 @@ func main() {
 
 func createServer() *http.Server {
 	return &http.Server{
-		Addr:           "localhost:80",
+		Addr:           "0.0.0.0:8080",
 		Handler:        createRouter(),
 		ReadTimeout:    0,
 		WriteTimeout:   0,
